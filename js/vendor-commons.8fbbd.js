@@ -7059,8 +7059,7 @@ function pagePreviewvue_type_script_lang_js_objectSpread(e) { for (var r = 1; r 
       this.$store.commit('setHideLayout');
     },
     previewPage: function previewPage() {
-      var page_id = this.$route.params.pageId;
-      page_id && window.open("/html/preview.html", '_blank');
+      this.$router.push('/preview');
     },
     parseLayoutConfig: function parseLayoutConfig() {
       var _context2, _context3;
